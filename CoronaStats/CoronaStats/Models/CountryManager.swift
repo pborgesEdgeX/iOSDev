@@ -12,6 +12,7 @@ protocol CountryManagerDelegate {
     func DidSetupArray(countryManager: CountryManager, countries: CountryModel)
     func DidFailWithError(error: Error)
 }
+
 struct CountryManager{
     
     var delegate: CountryManagerDelegate?
@@ -49,9 +50,9 @@ struct CountryManager{
          var countryArray = [""]
         do{
             let json = try JSONSerialization.jsonObject(with: countryData, options: .mutableLeaves)
-            guard let idk = json as? [Dictionary<String, Any>] else {return nil}
-           for data: Dictionary<String, Any> in idk{
-            countryArray.append(data["Country"] as! String)
+            guard let data = json as? [Dictionary<String, Any>] else {return nil}
+            for data: Dictionary<String, Any> in data{
+                countryArray.append(data["Country"] as! String)
            }
         }
         catch{

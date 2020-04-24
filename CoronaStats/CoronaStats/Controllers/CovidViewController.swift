@@ -38,7 +38,7 @@ class CovidViewController: UIViewController {
 extension CovidViewController: UIPickerViewDataSource, UIPickerViewDelegate{
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        1
+        return 1
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
@@ -50,7 +50,6 @@ extension CovidViewController: UIPickerViewDataSource, UIPickerViewDelegate{
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        
         covidManager.getCountryData(countryID: row, countryName: totalArray[row])
     }
 }

@@ -33,7 +33,7 @@ struct CovidManager{
                        self.delegate?.DidFailWithError(error: error!)
                        return
                    }
-                   
+    
                    if let safeData = data {
                     if let covid = self.parseJSON(safeData, countryID: countryID, countryNameOut: countryName){
                         self.delegate?.DidSendData(self, covid: covid)
