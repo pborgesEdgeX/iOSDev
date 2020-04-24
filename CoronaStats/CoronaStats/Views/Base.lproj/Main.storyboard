@@ -15,13 +15,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Sgo-yU-Jrh">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Jf-Fn-pLi">
                                 <rect key="frame" x="187.66666666666666" y="44" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="35"/>
-                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbM-BH-hAd" userLabel="topView">
@@ -30,13 +27,13 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="xIS-CB-CAW">
                                         <rect key="frame" x="30" y="40" width="18.666666666666671" height="39"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
-                                        <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="JJy-Wd-zOG">
                                         <rect key="frame" x="326.33333333333331" y="40" width="18.666666666666686" height="39"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
-                                        <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5v-zE-XEe">
@@ -45,18 +42,18 @@
                                             <constraint firstAttribute="height" constant="28" id="qgD-Fc-GnL"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
-                                        <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Cases" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zne-7o-tck">
                                         <rect key="frame" x="30" y="110" width="108" height="27"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
-                                        <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="staroflife" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="H7b-TH-Zjd">
                                         <rect key="frame" x="137" y="21.666666666666664" width="101" height="76.333333333333343"/>
-                                        <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="76.670000000000002" id="lq0-un-HsU"/>
                                             <constraint firstAttribute="width" constant="101" id="ygo-Hx-5Yj"/>
@@ -64,6 +61,7 @@
                                     </imageView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="H7b-TH-Zjd" firstAttribute="centerX" secondItem="bbM-BH-hAd" secondAttribute="centerX" id="8Gy-Hf-SXO"/>
                                     <constraint firstItem="H7b-TH-Zjd" firstAttribute="centerY" secondItem="xIS-CB-CAW" secondAttribute="centerY" id="9AG-tJ-zTJ"/>
                                     <constraint firstItem="H7b-TH-Zjd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xIS-CB-CAW" secondAttribute="trailing" constant="8" symbolic="YES" id="Mt0-sh-Jc2"/>
                                     <constraint firstItem="JJy-Wd-zOG" firstAttribute="top" secondItem="bbM-BH-hAd" secondAttribute="top" constant="40" id="P3B-Td-Z75"/>
@@ -89,13 +87,13 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="FXe-fU-E6g">
                                         <rect key="frame" x="30" y="40" width="18.666666666666671" height="39"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
-                                        <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="n74-X9-I8z">
                                         <rect key="frame" x="326.33333333333331" y="40" width="18.666666666666686" height="39"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
-                                        <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEF-m7-Icv">
@@ -104,18 +102,18 @@
                                             <constraint firstAttribute="height" constant="28" id="5pF-oF-V1t"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
-                                        <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Deaths" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tB9-fO-M2B">
                                         <rect key="frame" x="30" y="110" width="118" height="27"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
-                                        <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="waveform.path.ecg" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Qnh-LH-A8a">
                                         <rect key="frame" x="137" y="21.666666666666664" width="101" height="76.333333333333343"/>
-                                        <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="76.670000000000002" id="ARx-zY-iZt"/>
                                             <constraint firstAttribute="width" constant="101" id="Dox-3W-Ut4"/>
@@ -126,6 +124,7 @@
                                     <constraint firstAttribute="trailing" secondItem="vEF-m7-Icv" secondAttribute="trailing" constant="30" id="3Di-QS-0qd"/>
                                     <constraint firstItem="Qnh-LH-A8a" firstAttribute="centerY" secondItem="FXe-fU-E6g" secondAttribute="centerY" id="9rf-nq-5hp"/>
                                     <constraint firstAttribute="bottom" secondItem="tB9-fO-M2B" secondAttribute="bottom" constant="20" id="Evd-ep-we1"/>
+                                    <constraint firstItem="Qnh-LH-A8a" firstAttribute="centerX" secondItem="2aV-FY-r1r" secondAttribute="centerX" id="GFa-kb-ZsX"/>
                                     <constraint firstItem="n74-X9-I8z" firstAttribute="top" secondItem="2aV-FY-r1r" secondAttribute="top" constant="40" id="Hkp-Uh-N0z"/>
                                     <constraint firstItem="tB9-fO-M2B" firstAttribute="leading" secondItem="2aV-FY-r1r" secondAttribute="leading" constant="30" id="IAz-gg-nen"/>
                                     <constraint firstItem="tB9-fO-M2B" firstAttribute="top" secondItem="FXe-fU-E6g" secondAttribute="bottom" constant="31.000000000000142" id="JKH-lr-vJb"/>
@@ -148,13 +147,13 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Pih-pj-r2e">
                                         <rect key="frame" x="30" y="40" width="18.666666666666671" height="39"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
-                                        <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="zeo-eZ-Dtb">
                                         <rect key="frame" x="326.33333333333331" y="40" width="18.666666666666686" height="39"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
-                                        <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ded-Dz-FX6">
@@ -163,18 +162,18 @@
                                             <constraint firstAttribute="height" constant="28" id="MuA-yf-jwO"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
-                                        <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Recoveries" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xm-tS-QOu">
                                         <rect key="frame" x="30" y="110" width="154" height="27"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
-                                        <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bandage" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="F1k-pj-Zhl">
                                         <rect key="frame" x="137" y="21" width="101" height="77"/>
-                                        <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="76.670000000000002" id="lg7-eq-kwl"/>
                                             <constraint firstAttribute="width" constant="101" id="pkl-Yz-qGt"/>
@@ -209,19 +208,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="8Pk-0W-xsD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1Aj-fO-lq3"/>
-                            <constraint firstItem="Sgo-yU-Jrh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1QJ-r8-DA1"/>
                             <constraint firstAttribute="trailing" secondItem="PCE-8L-FkR" secondAttribute="trailing" id="4Dx-ry-bLW"/>
                             <constraint firstItem="bbM-BH-hAd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5NA-xW-Q5I"/>
-                            <constraint firstAttribute="bottom" secondItem="Sgo-yU-Jrh" secondAttribute="bottom" id="6H5-1M-FAW"/>
                             <constraint firstItem="PCE-8L-FkR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6h2-Il-h2e"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PCE-8L-FkR" secondAttribute="bottom" id="6tc-87-uQx"/>
-                            <constraint firstAttribute="trailing" secondItem="Sgo-yU-Jrh" secondAttribute="trailing" id="F3o-fX-OBS"/>
                             <constraint firstItem="8Pk-0W-xsD" firstAttribute="top" secondItem="2aV-FY-r1r" secondAttribute="bottom" constant="5" id="GdA-Qx-wRA"/>
                             <constraint firstItem="2aV-FY-r1r" firstAttribute="top" secondItem="bbM-BH-hAd" secondAttribute="bottom" constant="5" id="KG1-Md-EPT"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3Jf-Fn-pLi" secondAttribute="trailing" constant="5" id="RW2-s3-cVe"/>
                             <constraint firstAttribute="trailing" secondItem="8Pk-0W-xsD" secondAttribute="trailing" id="S6f-at-LDg"/>
                             <constraint firstAttribute="trailing" secondItem="2aV-FY-r1r" secondAttribute="trailing" id="ZhE-xL-nmh"/>
-                            <constraint firstItem="Sgo-yU-Jrh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="e6Q-bQ-QXi"/>
                             <constraint firstAttribute="trailing" secondItem="bbM-BH-hAd" secondAttribute="trailing" id="e9A-hB-h5V"/>
                             <constraint firstItem="bbM-BH-hAd" firstAttribute="top" secondItem="3Jf-Fn-pLi" secondAttribute="bottom" constant="10" id="gRE-BQ-Y78"/>
                             <constraint firstItem="3Jf-Fn-pLi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lHs-KR-KAy"/>
@@ -248,7 +243,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="appBackground" width="366.66665649414062" height="733.33331298828125"/>
         <image name="bandage" catalog="system" width="64" height="58"/>
         <image name="staroflife" catalog="system" width="62" height="64"/>
         <image name="waveform.path.ecg" catalog="system" width="64" height="62"/>
