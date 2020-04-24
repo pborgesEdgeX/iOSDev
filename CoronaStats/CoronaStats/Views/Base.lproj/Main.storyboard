@@ -16,13 +16,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Jf-Fn-pLi">
-                                <rect key="frame" x="187.66666666666666" y="44" width="0.0" height="0.0"/>
+                                <rect key="frame" x="187.66666666666666" y="44" width="0.0" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="VAj-iJ-ad6"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="35"/>
                                 <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbM-BH-hAd" userLabel="topView">
-                                <rect key="frame" x="0.0" y="54" width="375" height="157"/>
+                                <rect key="frame" x="0.0" y="104" width="375" height="157"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="xIS-CB-CAW">
                                         <rect key="frame" x="30" y="40" width="18.666666666666671" height="39"/>
@@ -82,18 +85,18 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2aV-FY-r1r" userLabel="medView">
-                                <rect key="frame" x="0.0" y="216" width="375" height="157"/>
+                                <rect key="frame" x="0.0" y="266" width="375" height="157"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="FXe-fU-E6g">
                                         <rect key="frame" x="30" y="40" width="18.666666666666671" height="39"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
-                                        <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="n74-X9-I8z">
                                         <rect key="frame" x="326.33333333333331" y="40" width="18.666666666666686" height="39"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
-                                        <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEF-m7-Icv">
@@ -142,7 +145,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Pk-0W-xsD" userLabel="bottomView">
-                                <rect key="frame" x="0.0" y="378" width="375" height="157"/>
+                                <rect key="frame" x="0.0" y="428" width="375" height="157"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Pih-pj-r2e">
                                         <rect key="frame" x="30" y="40" width="18.666666666666671" height="39"/>
@@ -201,7 +204,7 @@
                                 </constraints>
                             </view>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PCE-8L-FkR">
-                                <rect key="frame" x="0.0" y="562" width="375" height="216"/>
+                                <rect key="frame" x="0.0" y="593" width="375" height="185"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </pickerView>
                         </subviews>
@@ -212,6 +215,7 @@
                             <constraint firstItem="bbM-BH-hAd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5NA-xW-Q5I"/>
                             <constraint firstItem="PCE-8L-FkR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6h2-Il-h2e"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PCE-8L-FkR" secondAttribute="bottom" id="6tc-87-uQx"/>
+                            <constraint firstItem="PCE-8L-FkR" firstAttribute="top" secondItem="8Pk-0W-xsD" secondAttribute="bottom" constant="8" symbolic="YES" id="Axn-g3-DE1"/>
                             <constraint firstItem="8Pk-0W-xsD" firstAttribute="top" secondItem="2aV-FY-r1r" secondAttribute="bottom" constant="5" id="GdA-Qx-wRA"/>
                             <constraint firstItem="2aV-FY-r1r" firstAttribute="top" secondItem="bbM-BH-hAd" secondAttribute="bottom" constant="5" id="KG1-Md-EPT"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3Jf-Fn-pLi" secondAttribute="trailing" constant="5" id="RW2-s3-cVe"/>
