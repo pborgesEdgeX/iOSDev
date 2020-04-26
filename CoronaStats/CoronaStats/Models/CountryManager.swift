@@ -58,6 +58,13 @@ struct CountryManager{
         catch{
             print(error)
         }
+        
+        for (index, name) in countryArray.enumerated(){
+            if name == "Palestinian Territory"{
+                countryArray.remove(at: index)
+                print("Removed: \(name)")
+            }
+        }
         return CountryModel(country: countryArray)
     }
     

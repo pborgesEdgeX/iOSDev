@@ -10,6 +10,10 @@ import Foundation
 
 struct CovidData: Codable{
     let Countries: [Countries]
+    
+    func returnCountriesTotal() -> Int{
+        return Countries.count
+    }
 }
 
 struct Countries: Codable{
@@ -22,4 +26,5 @@ struct Countries: Codable{
     let NewRecovered: Int
     let TotalRecovered: Int
 }
+
 

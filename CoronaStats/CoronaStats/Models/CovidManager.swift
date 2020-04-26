@@ -58,12 +58,17 @@ struct CovidManager{
                 let totalDeaths = decodedData.Countries[index].TotalDeaths
                 let newRecovered = decodedData.Countries[index].NewRecovered
                 let totalRecovered = decodedData.Countries[index].TotalRecovered
+                if countryName != countryNameOut || index > decodedData.returnCountriesTotal(){
+                    print("\(countryName) FAILED HEALTH CHECK")
+                    return nil
+                }
                 let covid = CovidModel(newConfirmed: newCases, totalConfirmed: totalConfirmedCases, newDeaths: newDeaths, totalDeaths: totalDeaths, newRecovered: newRecovered, totalRecovered: totalRecovered, countryName: countryName)
+                print("[\(countryName)] PASSED HEALTH CHECK")
                 return covid
-                
             } catch{
                 self.delegate?.DidFailWithError(error: error)
                 return nil
             }
        }
+
 }

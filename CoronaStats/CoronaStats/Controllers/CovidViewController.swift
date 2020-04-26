@@ -57,9 +57,9 @@ extension CovidViewController: UIPickerViewDataSource, UIPickerViewDelegate{
 //MARK: - CountryManagerDelegate
 extension CovidViewController:  CountryManagerDelegate{
     func DidSetupArray(countryManager: CountryManager, countries: CountryModel) {
-        totalCount = countries.returnCountryTotal()
         totalArray.append(contentsOf: countries.country.sorted())
         totalArray.remove(at: 0)
+        totalCount = countries.returnCountryTotal()
         DispatchQueue.main.async {
             self.countryPicker.resignFirstResponder()
             self.countryPicker.reloadAllComponents()

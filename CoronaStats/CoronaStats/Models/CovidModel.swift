@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 struct CovidModel{
     let NewConfirmed: String
     let TotalConfirmed: String
@@ -27,6 +28,5 @@ struct CovidModel{
         self.TotalRecovered = totalRecovered.formattedWithSeparator
         self.countryName = countryName
     }
-    
-    
+
 }
