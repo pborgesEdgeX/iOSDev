@@ -59,12 +59,12 @@ struct CountryManager{
             print(error)
         }
         
-        for (index, name) in countryArray.enumerated(){
-            if name == "Palestinian Territory"{
-                countryArray.remove(at: index)
-                print("Removed: \(name)")
-            }
-        }
+//        for (index, name) in countryArray.enumerated(){
+//            if name == "Palestinian Territory"{
+//                countryArray.remove(at: index)
+//                print("Removed: \(name)")
+//            }
+//        }
         return CountryModel(country: countryArray)
     }
     
