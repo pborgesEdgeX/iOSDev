@@ -7,13 +7,23 @@
 //
 
 import UIKit
+import RealmSwift
 
-class CovidViewController: UIViewController {
+class CovidViewController: UIViewController, CountryManagerDelegate {
+    func DidSetupArray(countryManager: CountryManager, countries: Country) {
+        DispatchQueue.main.async {
+            print("DispatchQueue here")
+            self.countryPicker.reloadAllComponents()
+        }
+    }
+    
+    
+    @IBOutlet weak var dateUpdated: UILabel!
     
     var countryManager = CountryManager()
-    var covidManager = CovidManager()
-    var totalCount = 0
-    var totalArray:[String] = [""]
+    
+    let realm = try! Realm()
+    var totalArray: Results<Country>?
     
     @IBOutlet weak var coutryLabel: UILabel!
     @IBOutlet weak var newCasesLabel: UILabel!
@@ -24,14 +34,26 @@ class CovidViewController: UIViewController {
     @IBOutlet weak var totalRecoveredLabel: UILabel!
     @IBOutlet weak var countryPicker: UIPickerView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
         countryManager.delegate = self
         countryManager.getCountryList()
+        countryPicker.reloadAllComponents()
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        loadCountries()
         countryPicker.dataSource = self
         countryPicker.delegate = self
-        covidManager.delegate = self
+        countryPicker.reloadAllComponents()
+        
     }
+    
+    func loadCountries(){
+        totalArray = realm.objects(Country.self)
+    }
+    
+    
 }
 
 //MARK: - UIPickerViewDataSource, UIPickerViewDelegate
@@ -42,47 +64,55 @@ extension CovidViewController: UIPickerViewDataSource, UIPickerViewDelegate{
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return totalCount
+        print("Total number of rows: \(totalArray?.count ?? 0)")
+        return totalArray?.count ?? 1
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return totalArray[row]
+        if let safeCountry = totalArray?[row]{
+            return safeCountry.country
+        } else{
+            return "No Countries"
+        }
+        
     }
+    
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        covidManager.getCountryData(countryID: row, countryName: totalArray[row])
-    }
-}
-
-//MARK: - CountryManagerDelegate
-extension CovidViewController:  CountryManagerDelegate{
-    func DidSetupArray(countryManager: CountryManager, countries: CountryModel) {
-        totalArray.append(contentsOf: countries.country.sorted())
-        totalArray.remove(at: 0)
-        totalCount = countries.returnCountryTotal()
         DispatchQueue.main.async {
-            self.countryPicker.resignFirstResponder()
-            self.countryPicker.reloadAllComponents()
+            self.coutryLabel.text = self.totalArray![row].country
+            let numberFormatter = NumberFormatter()
+            numberFormatter.numberStyle = .decimal
+            self.newCasesLabel.text = numberFormatter.string(from: NSNumber(value: self.totalArray![row].NewConfirmed))
+            self.totalCasesLabel.text = numberFormatter.string(from: NSNumber(value: self.totalArray![row].totalConfirmed))
+            self.newDeathsLabel.text = numberFormatter.string(from: NSNumber(value: self.totalArray![row].NewDeaths))
+            self.totalDeathLabels.text = numberFormatter.string(from: NSNumber(value: self.totalArray![row].totalDeaths))
+            self.newRecoveredLabel.text = numberFormatter.string(from: NSNumber(value: self.totalArray![row].NewRecovered))
+            self.totalRecoveredLabel.text = numberFormatter.string(from: NSNumber(value: self.totalArray![row].NewConfirmed))
+            
+            let formatter = DateFormatter()
+            formatter.locale = Locale(identifier: "en_US_POSIX")
+            formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+            if let date = formatter.date(from: self.totalArray![row].date) {
+                let formatter = DateFormatter()
+                formatter.dateFormat = "MM/dd/yyyy"
+                self.dateUpdated.text = formatter.string(from: date)
+            }
         }
+        pickerView.reloadAllComponents()
     }
     
-    func DidFailWithError(error: Error) {
-        print(error)
-    }
-}
-//MARK: - CovidManagerDelegate
-extension CovidViewController: CovidManagerDelegate{
-    func DidSendData(_ covidManager: CovidManager, covid: CovidModel) {
-        DispatchQueue.main.async {
-            self.coutryLabel.text = covid.countryName
-            self.newCasesLabel.text = String(covid.NewConfirmed)
-            self.totalCasesLabel.text = String(covid.TotalConfirmed)
-            self.newDeathsLabel.text = String(covid.NewDeaths)
-            self.totalDeathLabels.text = String(covid.TotalDeaths)
-            self.newRecoveredLabel.text = String(covid.NewRecovered)
-            self.totalRecoveredLabel.text = String(covid.TotalRecovered)
+    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+        if let safeCountry = totalArray?[row]{
+            let attributedString = NSAttributedString(string: safeCountry.country , attributes: [NSAttributedString.Key.foregroundColor : UIColor.systemPink])
+            return attributedString
+        } else{
+            return NSAttributedString(string: "No Countries")
         }
+        
+        
     }
+
 }
 
 

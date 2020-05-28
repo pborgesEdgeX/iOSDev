@@ -17,8 +17,10 @@ struct CovidModel{
     let NewRecovered: String
     var TotalRecovered: String
     let countryName: String
+    let date: String
+    let slug: String
     
-    init(newConfirmed: Int, totalConfirmed: Int, newDeaths: Int, totalDeaths: Int, newRecovered: Int, totalRecovered: Int, countryName: String) {
+    init(newConfirmed: Int, totalConfirmed: Int, newDeaths: Int, totalDeaths: Int, newRecovered: Int, totalRecovered: Int, countryName: String, date: String, slug: String) {
         
         self.NewConfirmed = newConfirmed.formattedWithSeparator
         self.TotalConfirmed = totalConfirmed.formattedWithSeparator
@@ -27,6 +29,8 @@ struct CovidModel{
         self.NewRecovered = newRecovered.formattedWithSeparator
         self.TotalRecovered = totalRecovered.formattedWithSeparator
         self.countryName = countryName
+        self.date = date
+        self.slug = slug
     }
 
 }
